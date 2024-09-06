@@ -227,7 +227,7 @@ build_target() {
 
 build_requirements() {
     if [[ "$g_stor" == "fs" || $g_ci -eq 1 ]]; then
-		((cd third-party && cmake -S . -B build && cmake --build build -j 16))
+		(cd third-party && cmake -S . -B build && cmake --build build -j 16)
         #kernel_version=`uname -r | awk -F . '{print $1 * 1000 + $2}'`
         #if [ $kernel_version -gt 5001 ]; then
         #    g_build_opts+=("--define IO_URING_SUPPORT=1")
