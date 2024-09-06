@@ -1,6 +1,6 @@
 # Copyright (C) 2021 Jingli Chen (Wine93), NetEase Inc.
 
-.PHONY: list build dep install image playground check test
+.PHONY: list build dep install image playground check test install_and_config
 
 stor?=""
 prefix?= "$(PWD)/projects"
