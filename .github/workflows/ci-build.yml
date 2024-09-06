@@ -42,6 +42,7 @@ jobs:
     - name: Copy artifactory to another workflow
       uses: actions/upload-artifact@v4
       with:
-          name: dingofs.tar.gz
+          name: dingofs
           path: ./dingofs.tar.gz
+          compression-level: 0
 

@@ -18,7 +18,7 @@ jobs:
     - name: Download artifact
       uses: actions/download-artifact@v4
       with:
-        name: dingofs.tar.gz
+        name: dingofs
         path: ./
 
     - name: Extract artifact
