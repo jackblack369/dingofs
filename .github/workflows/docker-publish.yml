@@ -19,7 +19,12 @@ jobs:
       uses: actions/download-artifact@v4
       with:
         name: dingofs
+        run-id: ${{ github.event.workflow_run.id }}
+        github-token: ${{ secrets.GH_TOKEN }}
         path: ./
+
+    - name: List directory contents after download
+      run: ls -la
 
     - name: Extract artifact
       run: tar -xzvf dingofs.tar.gz -C curvefs/docker/debian9
