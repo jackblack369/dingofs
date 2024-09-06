@@ -40,7 +40,7 @@ jobs:
         tar -czvf dingofs.tar.gz curvefs/docker/debian9/curvefs 
 
     - name: Copy artifactory to another workflow
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
           name: dingofs.tar.gz
           path: ./dingofs.tar.gz
