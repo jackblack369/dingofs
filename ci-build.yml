@@ -2,9 +2,9 @@ name: CI Build
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    branches: [ "dev-dw" ]
+  #pull_request:
+  #  branches: [ "main" ]
 
 env:
   BUILD_TYPE: Release
